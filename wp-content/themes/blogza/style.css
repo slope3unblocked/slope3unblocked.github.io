@@ -1,0 +1,467 @@
+/*
+Theme Name: Blogza
+Theme URI: https://themeansar.com/free-themes/blogza-free-wordpress-theme/
+Author: Themeansar
+Author URI: https://themeansar.com
+Description: Blogza is a fast, clean, modern-looking Best Responsive News Magazine WordPress theme. The theme is fully widgetized, so users can manage the content by using easy to use widgets. Blogza is suitable for dynamic news, newspapers, magazine, publishers, blogs, editors, online and gaming magazines, newsportals,personal blogs, newspaper, publishing or review siteand any creative website. Blogza is SEO friendly, WPML,Gutenberg, translation and RTL ready. Live preview : https://demos.themeansar.com/blogus/blogza/ and documentation at https://docs.themeansar.com/docs/blogus/
+Version: 0.6
+Requires PHP: 7.0
+Requires at least: 5.4
+Tested up to: 6.6
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Template: blogus
+Text Domain: blogza
+Tags: blog, portfolio, news, grid-Layout, one-column, two-columns, three-columns, flexible-header, left-sidebar, right-sidebar, custom-background, custom-colors, custom-logo, custom-menu, featured-images, footer-widgets, full-width-template, post-formats, rtl-language-support, theme-options, sticky-post, threaded-comments, translation-ready, block-styles, wide-blocks
+
+Blogza WordPress Theme is child theme of Blogus, Copyright 2023 Themeansar
+Blogza is distributed under the terms of the GNU General Public License v3
+
+Blogza is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+*/
+*:focus {
+    outline: 1px solid;
+}
+.navbar-toggler.x:focus,
+button:focus {
+    border: 1px solid;
+    outline: 2px dotted #000;
+}
+button:focus:not(:focus-visible) {
+    outline: 2px dotted #000;
+}
+p a {
+    text-decoration: underline;
+}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    font-family: 'Roboto', sans-serif;
+}
+.site-title { 
+    font-family: 'Roboto';
+}
+.home-description { 
+    font-size:20px;
+}
+.navbar-wp .navbar-nav > li> a { 
+    font-family: 'Roboto', sans-serif;
+}
+body { 
+    font-family: 'Roboto', sans-serif;
+}
+footer .site-branding-text .site-title-footer a{
+    font-family: 'Roboto', sans-serif;
+}
+
+.article_content a, .bs-blog-post single a, .entry-content a, 
+.comment-body a, .textwidget a, .content-area a {
+    text-decoration: underline;
+}
+ 
+/* -------bs-head three---- */
+.bs-headthree .bs-header-main{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: scroll;
+}
+.bs-headthree .bs-header-main .inner{
+	display: flex;
+	padding: 15px 0;
+	margin: 0;
+	height: auto;
+    min-height: 150px;
+	align-items: center;
+	text-align: center;
+}
+.bs-headthree .navbar-brand {
+	margin-right: unset;
+}
+.bs-menu-full {
+	position: relative;
+}
+.bs-headthree .navbar-brand .custom-logo{
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+}
+/* header Six */
+.bs-headthree.six{
+    margin-bottom: 50px;
+}
+.bs-headthree.six .bs-social {
+	padding: 0;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+.bs-headthree.six .navbar-wp {
+    margin: 0;
+    z-index: 999;
+    transition: all 1s ease-out;
+	padding: 0;
+	height: auto;
+	min-height: 58px;
+	border-radius: 0;
+	margin-bottom: 30px;
+    border: 1px solid;
+}
+.bs-headthree.six .navbar-wp .navbar-nav > li> a {
+    padding: 0px;
+}
+.right-nav a{
+    box-shadow: none;
+}
+.bs-blog-post .bs-blog-thumb .bs-blog-category{
+    margin-left: 0px;
+    margin-right: 0px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    left: 20px;
+}
+.bs-blog-post .small{
+    padding: 0;
+}
+.bs-blog-post{
+    box-shadow: none;
+}
+.bs-blog-post:hover{
+    box-shadow: none;
+}
+.bs-blog-meta .bs-author .auth img{
+    box-shadow: none;
+}
+.desk-header{
+    padding: 0;
+}
+.site-branding-text .site-title{
+    font-size: inherit;
+}
+.site-branding-text .site-title a{
+    font-size: 60px;
+}
+.bs-masonry-columns.c2 {
+    column-gap: 1.5rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.bs-blog-post .bs-blog-meta a{
+    font-weight: 500;
+}
+.bs-masonry-columns.c3 {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-column-gap: 2rem;
+    padding: 0;
+    margin-top: 25px;
+}
+.bs-blog-thumb.lg{
+    height: auto;
+}
+.bs-blog-post .bs-blog-thumb img{
+    max-height: 600px;
+    transition: all 0.5s;
+    width: 100%;
+}
+.bs-blog-post .bs-blog-thumb:hover img{
+    transform: scale(1.05);
+}
+.bs-blog-post.single .bs-blog-thumb:hover img{
+    transform: scale(1);    
+}
+.bs-social li a i{
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+}
+.right-nav a{
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+}
+.menu-link-description {
+    font-size: 11px;
+    padding: 2px 4px;
+    margin: 0 3px;
+    line-height: 10px;
+    position: absolute;
+    border-radius: 1px;
+    line-height: normal;
+    top: 0;
+    margin: 0 3px;
+    font-weight: 700;
+    display: inline-table;
+    word-break: keep-all;
+    overflow-wrap: unset;
+    width: max-content;
+    z-index: 9;
+}
+.menu-link-description:after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 0 solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #fff;
+    left: 3px;
+    bottom: -4px;
+}
+.bs-info-author-block .bs-author-pic img{
+    margin: 0 auto;
+}
+.switch .slider::before{
+    font-size: 20px;
+}
+.navbar-nav{
+    justify-content: flex-start;
+    row-gap: 1rem;
+    column-gap: 1.5rem;
+    padding: 1rem 0;
+}
+.list-blog.bs-blog-post{
+    padding: 0;
+    margin-bottom: 0;
+}
+.blog-post-list{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+.bs-blog-post .bs-header{
+    padding: 20px 0;
+}
+.page-class .bs-card-box.padding-20{
+    padding: 0;
+    box-shadow: none;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+figure {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    margin-bottom: 10px;
+    break-inside: avoid;
+}
+figure>img {
+    grid-row: 1 / -1;
+    grid-column: 1;
+}
+figure a {
+    color: black;
+    text-decoration: none;
+}
+/* blogza bg image wrapper */
+.blogza-background-wrapper .squares, .blogza-background-wrapper .circles, .blogza-background-wrapper .triangles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+.squares .square, .circles .circle, .triangles .triangle{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    opacity: 0.1;
+    animation: animate 8s linear infinite;
+    bottom: -100px;
+}
+.circles .circle{
+    border-radius: 100px !important;
+}
+.triangles .triangle{
+    width: 0;
+    height: 0; 
+    border-bottom-width: 42px;
+    border-bottom-style: solid;
+    border-left-width: 25px;
+    border-left-style: solid;
+    border-right-width: 25px;
+    border-right-style: solid;
+    border-radius: 0 !important;
+}
+.squares .square:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+.circles .circle:nth-child(1){
+    left: 10%;
+    width: 22px;
+    height: 20px;
+    animation-delay: 0s;
+}
+.triangles .triangle:nth-child(1){
+    left: 45%;
+    border-right-width: 10px;
+    border-left-width: 10px;
+    border-bottom-width: 22px;
+    animation-delay: 0s;
+}
+.squares .square:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+.circles .circle:nth-child(2){
+    left: 45%;
+    width: 84px;
+    height: 80px;
+    animation-delay: 12s;
+}
+.triangles .triangle:nth-child(2){
+    left: 25%;
+    border-right-width: 15px;
+    border-left-width: 15px;
+    border-bottom-width: 28px;
+    animation-delay: 12s;
+}
+.squares .square:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+.circles .circle:nth-child(3){
+    left: 90%;
+    width: 53px;
+    height: 50px;
+    animation-delay: 4s;
+}
+.triangles .triangle:nth-child(3){
+    left: 80%;
+    border-right-width: 15px;
+    border-left-width: 15px;
+    border-bottom-width: 28px;
+    animation-delay: 4s;
+}
+.squares .square:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+.circles .circle:nth-child(4){
+    left: 60%;
+    width: 53px;
+    height: 50px;
+    animation-delay: 18s;
+}
+.triangles .triangle:nth-child(4){
+    left: 30%;
+    border-right-width: 20px;
+    border-left-width: 20px;
+    border-bottom-width: 38px;
+    animation-delay: 18s;
+}
+.squares .square:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+.circles .circle:nth-child(5){
+    left: 90%;
+    width: 43px;
+    height: 40px;
+    animation-delay: 1s;
+}
+.triangles .triangle:nth-child(5){
+    left: 70%;
+    border-right-width: 25px;
+    border-left-width: 25px;
+    border-bottom-width: 42px;
+    animation-delay: 1s;
+}
+.squares .square:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+.squares .square:nth-child(7){
+    left: 35%;
+    width: 100px;
+    height: 100px;
+    animation-delay: 7s;
+}
+.squares .square:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+.squares .square:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+.squares .square:nth-child(10){
+    left: 85%;
+    width: 100px;
+    height: 100px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+@media (max-width: 991.98px) {
+    .bs-masonry-columns.c3 { 
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+@media screen and (max-width: 991px){
+    .bs-headthree .navbar-brand .custom-logo {
+        width: 200px;
+        height: auto;
+    }
+    .bs-headthree.six .navbar-wp .navbar-nav > li> a{
+        padding: 13px 8px;
+    }
+    .navbar-nav{
+        gap: 0;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 767px){
+    .bs-latest-heading span{
+        display:none;
+    }
+    .bs-headthree .navbar-brand .custom-logo {
+        width: 120px;
+        height: auto;
+    }
+    .bs-masonry-columns.c3 {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    .bs-masonry-columns.c2 {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    .bs-blog-post .bs-blog-meta {
+        justify-content: start;
+    }
+}

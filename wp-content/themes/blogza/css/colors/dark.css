@@ -1,0 +1,15 @@
+body.dark {
+  --head-color: #fff;
+  --stext-color: #fff;
+  --text-color: #fff;
+  --wtext-color: #000;
+  --bg-color: #000;
+  --box-color: #222;
+  --border-color: #333;
+  --wrap-color: #000;
+  --bxsh: 0 1px 3px rgba(185, 185, 185, 0.15);
+  --bxshover: 0 4px 60px 0 rgba(185, 185, 185, 0.2);
+}
+body.dark.custom-background {
+  background: #000;
+}
